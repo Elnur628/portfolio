@@ -1,0 +1,123 @@
+.footer {
+  .container {
+    width: 90%;
+    padding: 3%;
+    margin: 0 auto;
+    .row {
+      .social {
+        display: flex;
+        .ftlg{
+          width: 40%;
+          margin-right: 50%;
+          .footerlogo {
+            img {
+              width: 70px;
+              height: 35px;
+            }
+          }
+        }
+        .scicons{
+          width: 6%;
+          display: flex;
+          justify-content: space-between;
+          .socialIcons {
+            margin-right: 2%;
+            font-size: 0;
+            .socialList {
+              display: flex;
+              list-style: none;
+              align-items: center;
+              height: 50px;
+              .socialItems {
+                a {
+                  font-size: 24px;
+                  color: #333;
+                  text-decoration: none;
+                  display: inline-block;
+                  i {
+                    color: #77777d;
+                    font-size: 20px;
+                    &:hover {
+                      color: #fbb710;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+      .pages {
+        display: flex;    
+        justify-content: space-between;    
+        padding-top: 3%;
+        padding-bottom: 2%;
+        .pLeft{
+          .pageLeft {
+            .leftList {
+              display: flex;
+              gap: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .leftItem {
+                a {
+                  color: #77777d;
+                  font-weight: 500;
+                  font-size: 16px;
+                  font-family: "Syne";
+                  &:hover {
+                    color: #fbb710;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .pRight{
+          .pageRight {
+            display: flex;
+            .rightList {
+              display: flex;
+              height: 50px;
+              margin: 0 1rem;
+              align-items: center;
+              gap: 50px;
+              .rightItem {
+                a {
+                  color: #77777d;
+                  font-weight: 500;
+                  font-size: 16px;
+                  font-family: "Syne";
+                  &:hover {
+                    color: #fbb710;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+      .copyRight {
+        .line {
+          width: 100%;
+          height: 0.5px;
+          background-color: #77777d;
+        }
+        .co {
+          color: #666666;
+          font-weight: 500;
+          font-size: 16px;
+          font-family: "Syne";
+          display: flex;
+          justify-content: center;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}

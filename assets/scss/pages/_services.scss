@@ -1,0 +1,115 @@
+.services {
+  .container {
+    .row {
+      .title {
+        text-align: center;
+        h4 {
+          color: #77777d;
+          margin: 0px 0px 16px;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-family: Syne, sans-serif;
+        }
+        h2 {
+          color: #1d1d26;
+          margin: 0px 0px 15px;
+          font-size: 50px;
+          margin: 0px 0px 15px;
+          font-family: Syne, sans-serif;
+          line-height: 1.2;
+          font-weight: 500;
+        }
+      }
+      .cards {
+        display: flex;
+        gap: 25px;
+        padding-top: 20px;
+        .cardOne {
+          background-color: rgba(119, 119, 125, 0.2);
+          width: 412px;
+          height: 270px;
+          transition: 0.5s;
+          padding: 30px 40px;
+          border-radius: 10px;
+          border: 1px solid rgba(119, 119, 125, 0.2);
+          &:hover {
+            border: 1px solid #1d1d26;
+          }
+          .cardIcon {
+            i {
+              font-size: 54px;
+              color: #77777d;
+            }
+            h3 {
+              color: #1d1d26;
+              font-size: 20px;
+              margin: 20px 0px;
+            }
+          }
+          .cardInfo {
+            p {
+              color: #77777d;
+              font-size: 16px;
+              line-height: 28px;
+            }
+          }
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            .modalContent {
+              background-color: white;
+              margin: 15% auto;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #888;
+              width: 30%;
+              text-align: center;
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+              .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+                .close:hover,
+                .close:focus {
+                  color: black;
+                  text-decoration: none;
+                }
+              }
+              .closeModal {
+                width: 100px;
+                height: 30px;
+                border-radius: 10px;
+                color: #1d1d26;
+                font-size: 16px;
+                font-family: Syne, sans-serif;
+                font-weight: 600;
+                line-height: 28px;
+              }
+            }
+          }
+          .openModal {
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 30%;
+            color: #1d1d26;
+            font-size: 16px;
+            font-family: Syne, sans-serif;
+            font-weight: 600;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}

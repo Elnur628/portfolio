@@ -1,0 +1,21 @@
+.knowledge {
+  .container {
+    .row {
+      .swiper {
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        top: 45%;
+        margin-left: -150px;
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

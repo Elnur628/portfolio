@@ -1,0 +1,96 @@
+//** HEADER START **/
+.header {
+  .container {
+    width: 90%;
+    padding: 3%;
+    margin: 0 auto;
+    .row {
+      .head {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+          width: 10%;
+          margin-right: 40%;
+          img {
+            width: 70px;
+            height: 35px;
+          }
+        }
+        .navBar {
+          display: flex;
+          width: 12%;
+          .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 1rem;
+            height: 50px;
+            gap: 50px;
+            .navItem {
+              a {
+                color: #77777d;
+                font-weight: 500;
+                font-size: 16px;
+                font-family: "Syne";
+                &:hover {
+                  color: #fbb710;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//** HEADER END **/
+
+@media (max-width: 700px) {
+  .header {
+    .container {
+      .row {
+        .navBar {
+          .menu-button-container {
+            display: flex;
+          }
+          .menu {
+            position: absolute;
+            top: 0;
+            margin-top: 50px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .navItem {
+              display: flex;
+              justify-content: center;
+              margin: 0;
+              padding: 0.5em 0;
+              width: 100%;
+              color: white;
+              background-color: #222;
+            }
+            .navItem:not(:last-child) {
+              border-bottom: 1px solid #444;
+            }
+          }
+          #menu-toggle ~ .menu li {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+          }
+          #menu-toggle:checked ~ .menu li {
+            border: 1px solid #333;
+            height: 2.5em;
+            padding: 0.5em;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+          }
+        }
+      }
+    }
+  }
+}

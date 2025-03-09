@@ -1,0 +1,127 @@
+.about {
+  .container {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      .foto {
+        width: 43%;
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        border-radius: 10px;
+        padding: 40px;
+        margin-right: 30px;
+        .image {
+          .pphoto {
+            img {
+              width: 440px;
+              height: 440px;
+              border-radius: 10px;
+              margin-bottom: 30px;
+              object-fit: cover;
+            }
+            h2 {
+              text-align: center;
+            }
+          }
+          .pabout {
+            width: 194px;
+            height: 41px;
+            padding: 15px 20px 10px;
+            text-align: center;
+            margin-left: 27%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid rgb(237, 237, 238);
+            border-radius: 30px;
+            h6 {
+              font-size: 16px;
+              font-weight: 400;
+              color: #77777d;
+              margin-top: -5px;
+            }
+          }
+          .psocials {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            .socialList {
+              display: flex;
+              justify-content: center;
+              gap: 30px;
+              .socialIcons {
+                width: 46px;
+                height: 46px;
+                box-sizing: border-box;
+                border: 1px solid rgb(237, 237, 238);
+                padding: 10px 12px;
+                a {
+                  i {
+                    font-size: 20px;
+                    color: #77777d;
+                    &:hover {
+                      color: #fbb710;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .aboutInfo {
+        width: 57%;
+        .aboutMeself {
+          h2 {
+            font-size: 53px;
+            line-height: 72px;
+            margin-bottom: 20px;
+            font-family: Syne, sans-serif;
+            font-weight: 500;
+          }
+        }
+        .cv {
+          margin-top: 40px;
+          margin-bottom: 80px;
+          a {
+            display: none;
+          }
+          .btn {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            width: 185px;
+            height: 57px;
+            margin: 0px 5px 10px 0;
+            padding: 20px 34px;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            color: white;
+            background-color: black;
+            border-radius: 3px;
+            transition: 0.3s;
+          }
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+        .rightUp {
+          .pageList {
+            display: flex;
+            gap: 30%;
+            span {
+              .pageItem {
+                display: flex;
+                align-items: center;
+                color: #77777d;
+                gap: 10px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

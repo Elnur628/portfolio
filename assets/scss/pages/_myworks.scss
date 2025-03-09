@@ -1,0 +1,46 @@
+.works {
+  .container {
+    .row {
+      .title {
+        text-align: center;
+        h4 {
+          color: #77777d;
+          margin: 0px 0px 16px;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-family: "Syne", sans-serif;
+        }
+        h2 {
+          color: #1d1d26;
+          margin: 0px 0px 15px;
+          font-size: 50px;
+          margin: 0px 0px 15px;
+          font-family: Syne, sans-serif;
+          line-height: 1.2;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 250px;
+        a{
+            img {
+                display: block;
+                width: 100%;
+              }
+        }
+        
+      }
+    }
+  }
+}
